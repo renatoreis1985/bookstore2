@@ -9,7 +9,7 @@ import git  # type: ignore
 @csrf_exempt
 def update(request):
     if request.method == "POST":
-        repo = git.Repo('/home/drsantos20/bookstore')  # 🔴 Atenção: esse caminho pode estar incorreto!
+        repo = git.Repo('/home/renato1980/bookstore2')  # 🔴 Atenção: esse caminho pode estar incorreto!
         origin = repo.remotes.origin
         origin.pull()
         return HttpResponse("Updated code on PythonAnywhere")
