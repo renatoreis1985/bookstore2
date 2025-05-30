@@ -10,5 +10,6 @@ urlpatterns = [
     path('delete-tweet/<int:id>/', views.delete_tweet, name='delete_tweet'),
     path('logout/', views.logout_view, name='logout'),  # URL para logout
     path('', views.feed_view, name='feed'),  # Página inicial (feed)
+    path('', views.home, name='home'),
     path('', include('django.contrib.auth.urls')),  # Inclui as rotas padrão de autenticação do Django
 ]
